@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Flower World</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-links" id="links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </div>
+
+    <header>
+        <h1>🌸 About Flower World 🌸</h1>
+    </header>
+
+    <section class="info">
+        <h3>Our Story</h3>
+        <p>Flower World started with the passion of delivering happiness through fresh flowers. We connect people through the beauty of nature, offering personalized bouquets, plants, and gifts for every occasion.</p>
+    </section>
+
+    <section class="info">
+        <h3>Our Mission</h3>
+        <p>To bring joy and connection by providing high-quality flowers and excellent delivery services nationwide. We aim to make every celebration memorable.</p>
+    </section>
+
+    <div class="footer">
+        <p>Copyright © 2025 Flower. All Rights Reserved</p>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-square-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+    </div>
+
+    <script>
+        // Guarded navigation menu controls
+        (function(){
+            var links = document.getElementById('links');
+            window.showMenu = function(){ if (links) links.style.top = '0'; };
+            window.hideMenu = function(){ if (links) links.style.top = '-240px'; };
+        })();
+    </script>
+</body>
+</html>

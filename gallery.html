@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Flower World</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+    <body>
+
+    <div class="container">
+        <div class="nav-links" id="links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </div>
+
+    <header>
+        <h1>🌸 Flower Gallery 🌸</h1>
+    </header>
+
+    <section class="flowers">
+        <div class="card">
+            <img src="images/rose.jpg" alt="Rose">
+            <h2>Roses</h2>
+            <p>Classic red roses that symbolize love and passion.</p>
+             <p class="price">$5.68</p>
+        </div>
+        <div class="card">
+            <img src="images/lily.jpg" alt="Lily">
+            <h2>Lilies</h2>
+            <p>Elegant lilies perfect for special occasions.</p>
+             <p class="price">$6.74</p>
+
+        </div>
+        <div class="card">
+            <img src="images/sunflower.jpg" alt="Sunflower">
+            <h2>Sunflowers</h2>
+            <p>Bright and cheerful sunflowers for happiness.</p>
+            <p class="price">$4.73</p>
+        </div>
+        <div class="card">
+            <img src="images/flower 9.avif" alt="Violet">
+            <h2>Violet</h2>
+            <p>Beautiful tulips in vibrant spring colors.</p>
+            <p class="price">$5.14</p>
+        </div>
+        <div class="card">
+            <img src="images/flower 5.jpeg" alt="floral">
+            <h2>Tulips</h2>
+            <p>Beautiful tulips in vibrant spring colors.</p>
+            <p class="price">$5.14</p>
+        </div><div class="card">
+            <img src="images/flower 6.jpeg" alt="Golden">
+            <h2>Golden</h2>
+            <p>Soft and mysterious.</p>
+             <p class="price">$4.99</p>
+        </div><div class="card">
+            <img src="images/flower 7.avif" alt="Eventra">
+            <h2>Eventra</h2>
+            <p>Luxurious and full-bodied.</p>
+            <p class="price">$4.05</p>
+        </div><div class="card">
+            <img src="images/flower 8.avif" alt="Daisy">
+            <h2>Daisy</h2>
+            <p>Sweet and Fragrant.</p>
+            <p class="price">$5.40</p>
+        </div><div class="card">
+            <img src="images/flower 9.avif" alt="Jasmine">
+            <h2>Jasmine</h2>
+            <p>Brilliant and cheerful.</p>
+            <p class="price">$5.68</p>
+        </div>
+
+    </section>
+
+    <div class="footer">
+        <p>Copyright © 2025 Flower. All Rights Reserved</p>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-square-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+    </div>
+
+    <script>
+        var links = document.getElementById('links');
+        function showMenu(){ links.style.top = '0'; }
+        function hideMenu(){ links.style.top = '-240px'; }
+    </script>
+</body>
+</html>

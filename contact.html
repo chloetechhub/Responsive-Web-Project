@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Flower World</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-links" id="links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </div>
+
+    <header>
+        <h1>📞 Contact Us</h1>
+    </header>
+
+    <section class="comments">
+        <h2>Get in Touch</h2>
+        <form class="comment-form" id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="4" placeholder="Write your message here..." required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <div class="info">
+        <h3>Our Contact Info</h3>
+        <p>Email: support@flowerworld.com</p>
+        <p>Phone: +256 756 677 689</p>
+        <p>Address: Kampala, Uganda</p>
+    </div>
+
+    <div class="footer">
+        <p>Copyright © 2025 Flower. All Rights Reserved</p>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-square-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+    </div>
+
+    <script>
+        // Navigation menu (guarded) and contact form handling
+        var links = document.getElementById('links');
+        function showMenu(){ if (links) links.style.top = '0'; }
+        function hideMenu(){ if (links) links.style.top = '-240px'; }
+
+        (function(){
+            const form = document.getElementById('contactForm');
+            if (!form) return;
+
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                if (!name || !email || !message) {
+                    alert('Please fill in all fields before sending.');
+                    return;
+                }
+
+                // Simulate sending: show a confirmation message below the form
+                const msg = document.createElement('div');
+                msg.className = 'contact-confirm';
+                msg.textContent = `Thanks ${name}! Your message has been sent.`;
+                form.parentNode.insertBefore(msg, form.nextSibling);
+
+                form.reset();
+                document.getElementById('name').focus();
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(../images/backround.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+
+
+.nav-links{
+    text-align: center;
+    transition: .5s;
+}
+
+.nav-links ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 12px;
+    color: #555;
+    transition: 0.7s;
+}
+
+.nav-links ul li a:hover{
+    color: purple;
+}
+
+.container .fa{
+    display: none;
+}
+
+@media(max-width:700px){
+    .nav-links{
+        position: absolute;
+        width: 100%;
+        height: 220px;
+        top: -240px;
+        background-color: #fff;
+    }
+    .container .fa{
+        display: block;
+        color: #474545;
+        padding: 10px;
+    }
+    .container .fa {
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 1000;
+}
+
+    .nav-links ul li{
+        display: block;
+        padding: 10px 0;
+    }
+    .nav-links ul li a{
+        color: #474545;
+    }
+
+    .nav-links ul li a:hover{
+        color: #474545;
+    }
+    .nav-links {
+    transition: top 0.5s ease;
+}
+
+}
+
+
+    header {
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-align: center;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    }
+
+.head-topic{
+    text-align: center;
+    color: #555;
+    font-size: 25px;
+    font-family: serif;
+    font-style: italic;
+}
+
+    .flowers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h2 {
+      margin: 15px 0 10px;
+      color: #e75480;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+  .card .price {
+    font-size: 1.1rem;       /* slightly bigger than description */
+    font-weight: bold;        /* make it bold */
+    color: #e75480;           /* matches card title color */
+    margin-top: 10px;         /* spacing from description */
+    text-align: center;       /* center align */
+}
+.card:hover .price {
+    color: #a61e4d;
+    transition: color 0.3s;
+}
+
+    /* Media Query for smaller devices */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .card {
+        padding: 15px;
+      }
+    }
+
+
+    .comments {
+      margin-top: 50px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    .comments h2 {
+      color: #d6336c;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .comment-form input, 
+    .comment-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .comment-form button {
+      background: #d6336c;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .comment-form button:hover {
+      background: #a61e4d;
+    }
+
+    .comment-list {
+      margin-top: 20px;
+    }
+
+    .comment {
+      background: #f8f8f8;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      border-left: 5px solid #d6336c;
+    }
+
+    /* Media Query */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .card {
+        padding: 15px;
+      }
+      .comments {
+        padding: 20px;
+      }
+      .info {
+    padding: 15px;
+}
+
+.flowers {
+    gap: 15px;
+}
+    }
+
+
+.info{
+    margin-bottom: 35px;
+}
+.info h3 {
+    color: #e75480;
+    margin-bottom: 10px;
+}
+
+.info p {
+    line-height: 1.7;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+
+.footer{
+  background-color: black;
+    color: #efeded;
+    text-align: center;
+}
+
+.footer .fa-brands{
+    color: #474545;
+    font-size: 2rem;
+    transition: 0.7s;
+}
+
+.footer .fa-brands:hover{
+    color: purple;
+    font-size: 2rem;
+}
+.footer {
+    background: rgba(0,0,0,0.05);
+    padding: 20px 0;
+}
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  color: #ff9800;
+}
+
+.footer-section p, 
+.footer-section li, 
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a:hover {
+  color: #ff9800;
+}
+
+.footer-section form input[type="email"] {
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.footer-section form button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ff9800;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-section form button:hover {
+  background-color: #e68900;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  color: #aaa;
+}
+
+
+
+
